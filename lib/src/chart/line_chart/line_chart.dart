@@ -29,12 +29,12 @@ class LineChart extends ImplicitlyAnimatedWidget {
   /// render the chart itself (without anything around the chart).
   final Key? chartRendererKey;
 
-  /// Creates a [_LineChartState]
+  /// Creates a [LineChartState]
   @override
-  _LineChartState createState() => _LineChartState();
+  LineChartState createState() => LineChartState();
 }
 
-class _LineChartState extends AnimatedWidgetBaseState<LineChart> {
+class LineChartState extends AnimatedWidgetBaseState<LineChart> {
   /// we handle under the hood animations (implicit animations) via this tween,
   /// it lerps between the old [LineChartData] to the new one.
   LineChartDataTween? _lineChartDataTween;

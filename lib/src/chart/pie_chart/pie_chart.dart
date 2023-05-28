@@ -25,12 +25,12 @@ class PieChart extends ImplicitlyAnimatedWidget {
   /// Determines how the [PieChart] should be look like.
   final PieChartData data;
 
-  /// Creates a [_PieChartState]
+  /// Creates a [PieChartState]
   @override
-  _PieChartState createState() => _PieChartState();
+  PieChartState createState() => PieChartState();
 }
 
-class _PieChartState extends AnimatedWidgetBaseState<PieChart> {
+class PieChartState extends AnimatedWidgetBaseState<PieChart> {
   /// We handle under the hood animations (implicit animations) via this tween,
   /// it lerps between the old [PieChartData] to the new one.
   PieChartDataTween? _pieChartDataTween;

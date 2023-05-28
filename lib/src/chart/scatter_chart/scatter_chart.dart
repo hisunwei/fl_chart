@@ -28,12 +28,12 @@ class ScatterChart extends ImplicitlyAnimatedWidget {
   /// render the chart itself (without anything around the chart).
   final Key? chartRendererKey;
 
-  /// Creates a [_ScatterChartState]
+  /// Creates a [ScatterChartState]
   @override
-  _ScatterChartState createState() => _ScatterChartState();
+  ScatterChartState createState() => ScatterChartState();
 }
 
-class _ScatterChartState extends AnimatedWidgetBaseState<ScatterChart> {
+class ScatterChartState extends AnimatedWidgetBaseState<ScatterChart> {
   /// we handle under the hood animations (implicit animations) via this tween,
   /// it lerps between the old [ScatterChartData] to the new one.
   ScatterChartDataTween? _scatterChartDataTween;

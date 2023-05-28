@@ -23,10 +23,10 @@ class RadarChart extends ImplicitlyAnimatedWidget {
   final RadarChartData data;
 
   @override
-  _RadarChartState createState() => _RadarChartState();
+  RadarChartState createState() => RadarChartState();
 }
 
-class _RadarChartState extends AnimatedWidgetBaseState<RadarChart> {
+class RadarChartState extends AnimatedWidgetBaseState<RadarChart> {
   /// we handle under the hood animations (implicit animations) via this tween,
   /// it lerps between the old [RadarChartData] to the new one.
   RadarChartDataTween? _radarChartDataTween;
